@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Analizador léxico</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+</head>
+<body>
+    <h1>Analizador léxico</h1>
+
+    <main>
+        <form action="">
+            <label for="inputText">Ingrese el texto a analizar:</label><br>
+            <textarea id="inputText" name="inputText" rows="10" cols="50"></textarea><br>
+            <button type="button" id="btnAnalizar" class="btnAnalizar">Analizar</button>
+        </form>
+
+        <h2 style="text-align: center;">Tabla de Tokens</h2>
+        <table id="tablaTokens">
+            <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Valor</th>
+                <th>Posición</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Filas generadas dinámicamente -->
+            </tbody>
+    </main>
+    </table>
+
+    <script src="./index.js"></script>
+</body>
+</html>
