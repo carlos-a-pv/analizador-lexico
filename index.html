@@ -6,6 +6,9 @@
     <title>Analizador léxico</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Analizador léxico</h1>
@@ -29,8 +32,26 @@
             <tbody>
             <!-- Filas generadas dinámicamente -->
             </tbody>
+        </table>
+
+        <div id="loader-overlay">
+            <div class="loader-content">
+                <svg width="50" height="50" viewBox="0 0 100 100" fill="none">
+                <circle cx="50" cy="50" r="35" stroke="#333" stroke-width="10" stroke-linecap="round"
+                    stroke-dasharray="164.93361431346415 56.97787143782138">
+                    <animateTransform
+                    attributeName="transform"
+                    type="rotate"
+                    repeatCount="indefinite"
+                    dur="1s"
+                    values="0 50 50;360 50 50"
+                    keyTimes="0;1" />
+                </circle>
+                </svg>
+                <p>Cargando...</p>
+            </div>
+            </div>
     </main>
-    </table>
 
     <script src="./index.js"></script>
 </body>
